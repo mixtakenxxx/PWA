@@ -5,7 +5,7 @@ const CORE_ASSETS = [
   '/post.html',
   '/post2.html',
   '/post3.html',
-  '/assets/main.css',
+  '/assets/css/main.css',
   '/assets/js/main.js'
 ];
 
@@ -55,3 +55,4 @@ self.addEventListener('fetch', event => {
       .catch(() => caches.match('/index.html')) // fallback to index.html if offline
   );
 });
+
